@@ -1,0 +1,5 @@
+{
+  "log": "{\"ts\": 1795152689.96, \"event\": \"recorder_start\", \"pid\": 782}\n{\"ts\": 1795152689.974, \"client\": \"redacted\", \"port\": 443, \"connection_id\": \"237008374\", \"event\": \"connection_open\"}\n{\"ts\": 1795152689.974, \"client\": \"redacted\", \"port\": 443, \"connection_id\": \"237008374\", \"orig_dst\": \"redacted\", \"sni\": null, \"outcome\": \"refused_no_sni\"}\n",
+  "alive": true,
+  "snapshot_at": 1795152692.4831247
+}

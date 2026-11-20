@@ -1,0 +1,5 @@
+{
+  "log": "{\"ts\": 1795152777.716, \"event\": \"recorder_start\", \"pid\": 782}\n{\"ts\": 1795152777.755, \"client\": \"redacted\", \"port\": 443, \"connection_id\": \"315278776\", \"event\": \"connection_open\"}\n{\"ts\": 1795152777.755, \"client\": \"redacted\", \"port\": 443, \"connection_id\": \"315278776\", \"orig_dst\": \"redacted\", \"sni\": null, \"outcome\": \"refused_no_sni\"}\n{\"ts\": 1795152778.744, \"client\": \"redacted\", \"port\": 443, \"connection_id\": \"1303683223\", \"event\": \"connection_open\"}\n{\"ts\": 1795152778.744, \"client\": \"redacted\", \"port\": 443, \"connection_id\": \"1303683223\", \"orig_dst\": \"redacted\", \"sni\": \"example.com\", \"upstream\": \"172.66.147.243\", \"outcome\": \"relayed\", \"bytes_up\": 717, \"bytes_down\": 5459, \"dur_s\": 0.027}\n",
+  "alive": true,
+  "snapshot_at": 1795152779.6508877
+}
