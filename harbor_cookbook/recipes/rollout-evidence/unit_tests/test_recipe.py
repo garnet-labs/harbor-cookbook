@@ -10,6 +10,13 @@ import pytest
 RECIPE = Path(__file__).resolve().parents[1]
 
 
+def test_expected_hosts_include_model_endpoint_but_not_planted_host():
+    hosts = json.loads((RECIPE / "expected-hosts.json").read_text())
+    assert "ai-gateway.vercel.sh" in hosts
+    assert "example.org" in hosts
+    assert "example.com" not in hosts
+
+
 def load(path):
     spec = importlib.util.spec_from_file_location(path.stem, path)
     module = importlib.util.module_from_spec(spec)
