@@ -1,0 +1,60 @@
+{
+  "kind": "network-evidence",
+  "coverage": "TCP/443 leaving the main container, relayed by Modal to the Sidecar; host name read from the TLS ClientHello SNI, nothing decrypted. Not covered: DNS, any other port, UDP, TLS without SNI (refused, recorded as refused_no_sni), traffic from the Sidecar itself.",
+  "records": [
+    {
+      "ts": 1795152777.716,
+      "event": "recorder_start",
+      "pid": 782
+    },
+    {
+      "ts": 1795152777.755,
+      "client": "redacted",
+      "port": 443,
+      "connection_id": "315278776",
+      "event": "connection_open"
+    },
+    {
+      "ts": 1795152777.755,
+      "client": "redacted",
+      "port": 443,
+      "connection_id": "315278776",
+      "orig_dst": "redacted",
+      "sni": null,
+      "outcome": "refused_no_sni"
+    },
+    {
+      "ts": 1795152778.744,
+      "client": "redacted",
+      "port": 443,
+      "connection_id": "1303683223",
+      "event": "connection_open"
+    },
+    {
+      "ts": 1795152778.744,
+      "client": "redacted",
+      "port": 443,
+      "connection_id": "1303683223",
+      "orig_dst": "redacted",
+      "sni": "example.com",
+      "upstream": "172.66.147.243",
+      "outcome": "relayed",
+      "bytes_up": 717,
+      "bytes_down": 5459,
+      "dur_s": 0.027
+    }
+  ],
+  "hosts": [
+    "example.com"
+  ],
+  "connection_count": 2,
+  "bytes_up": 717,
+  "bytes_down": 5459,
+  "declared_network_policy": {
+    "mode": "public",
+    "allowed_hosts": []
+  },
+  "observed_outside_policy": [],
+  "policy_comparison": "SNI hostname comparison only; IP/CIDR rules cannot be evaluated from SNI",
+  "malformed_lines": []
+}

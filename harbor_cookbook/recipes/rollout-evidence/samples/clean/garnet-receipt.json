@@ -1,0 +1,38 @@
+{
+  "kind": "network-evidence",
+  "coverage": "TCP/443 leaving the main container, relayed by Modal to the Sidecar; host name read from the TLS ClientHello SNI, nothing decrypted. Not covered: DNS, any other port, UDP, TLS without SNI (refused, recorded as refused_no_sni), traffic from the Sidecar itself.",
+  "records": [
+    {
+      "ts": 1795152689.96,
+      "event": "recorder_start",
+      "pid": 782
+    },
+    {
+      "ts": 1795152689.974,
+      "client": "redacted",
+      "port": 443,
+      "connection_id": "237008374",
+      "event": "connection_open"
+    },
+    {
+      "ts": 1795152689.974,
+      "client": "redacted",
+      "port": 443,
+      "connection_id": "237008374",
+      "orig_dst": "redacted",
+      "sni": null,
+      "outcome": "refused_no_sni"
+    }
+  ],
+  "hosts": [],
+  "connection_count": 1,
+  "bytes_up": 0,
+  "bytes_down": 0,
+  "declared_network_policy": {
+    "mode": "public",
+    "allowed_hosts": []
+  },
+  "observed_outside_policy": [],
+  "policy_comparison": "SNI hostname comparison only; IP/CIDR rules cannot be evaluated from SNI",
+  "malformed_lines": []
+}
